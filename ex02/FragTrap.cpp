@@ -1,21 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:  ikhristi <ikhristi@student.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 14:20:02 by  ikhristi         #+#    #+#             */
-/*   Updated: 2024/06/17 15:44:23 by  ikhristi        ###   ########.fr       */
+/*   Created: 2024/06/17 20:07:15 by  ikhristi         #+#    #+#             */
+/*   Updated: 2024/06/17 20:12:47 by  ikhristi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef FRAGTRAP_HPP
+# define FRAGTRAP_HPP
+
 #include "ClapTrap.hpp"
 
-int main()
+class FragTrap : public ClapTrap
 {
-    ClapTrap claptrap("Illia");
-    claptrap.attack("enemy");
-    claptrap.takeDamage(10);
-    claptrap.beRepaired(5);
-}
+    public:
+        FragTrap(std::string name);
+        FragTrap();
+        ~FragTrap();
+        void highFivesGuys(void);
+        void attack(const std::string & target);
+};
+
+#endif

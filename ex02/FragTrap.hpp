@@ -1,21 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   FragTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:  ikhristi <ikhristi@student.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 14:20:02 by  ikhristi         #+#    #+#             */
-/*   Updated: 2024/06/17 15:44:23 by  ikhristi        ###   ########.fr       */
+/*   Created: 2024/06/17 20:07:17 by  ikhristi         #+#    #+#             */
+/*   Updated: 2024/06/17 20:07:18 by  ikhristi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
-
-int main()
-{
-    ClapTrap claptrap("Illia");
-    claptrap.attack("enemy");
-    claptrap.takeDamage(10);
-    claptrap.beRepaired(5);
-}

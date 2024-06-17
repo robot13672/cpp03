@@ -6,16 +6,16 @@
 /*   By:  ikhristi <ikhristi@student.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 14:20:02 by  ikhristi         #+#    #+#             */
-/*   Updated: 2024/06/17 15:44:23 by  ikhristi        ###   ########.fr       */
+/*   Updated: 2024/06/17 19:57:15 by  ikhristi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ClapTrap.hpp"
+#include "ScavTrap.hpp"
 
 int main()
 {
-    ClapTrap claptrap("Illia");
-    claptrap.attack("enemy");
-    claptrap.takeDamage(10);
-    claptrap.beRepaired(5);
+    ScavTrap scavtrap("Vlad");
+
+    scavtrap.attack("Illia");
+    
 }

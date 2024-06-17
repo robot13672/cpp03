@@ -6,7 +6,7 @@
 /*   By:  ikhristi <ikhristi@student.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/06/13 14:20:06 by  ikhristi         #+#    #+#             */
-/*   Updated: 2024/06/17 15:43:36 by  ikhristi        ###   ########.fr       */
+/*   Updated: 2024/06/17 20:01:29 by  ikhristi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,17 @@
 
 ClapTrap::ClapTrap(std::string name)
 {
-    std::cout << "Constructor inited!" << std::endl;
+    std::cout << "ClapTrap Constructor inited!" << std::endl;
     this->name = name;
+    this->hp = 10;
+    this->ep = 10;
+    this->dmg = 0;
+}
+
+ClapTrap::ClapTrap()
+{
+    std::cout << "ClapTrap Constructor without parameters inited!" << std::endl;
+    this->name = "NoName";
     this->hp = 10;
     this->ep = 10;
     this->dmg = 0;

@@ -1,21 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.cpp                                           :+:      :+:    :+:   */
+/*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By:  ikhristi <ikhristi@student.42wolfsburg    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/06/13 14:20:02 by  ikhristi         #+#    #+#             */
-/*   Updated: 2024/06/17 15:44:23 by  ikhristi        ###   ########.fr       */
+/*   Created: 2024/06/17 17:55:40 by  ikhristi         #+#    #+#             */
+/*   Updated: 2024/06/17 18:26:10 by  ikhristi        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#ifndef SCAVTRAP_HPP
+# define SCAVTRAP_HPP   
+
 #include "ClapTrap.hpp"
 
-int main()
+class ScavTrap : public ClapTrap
 {
-    ClapTrap claptrap("Illia");
-    claptrap.attack("enemy");
-    claptrap.takeDamage(10);
-    claptrap.beRepaired(5);
-}
+    public:
+        ScavTrap(std::string name);
+        ScavTrap();
+        ~ScavTrap();
+        void attack(const std::string & target);
+        void guardGate();
+};
+
+
+#endif
