@@ -6,11 +6,11 @@
 #    By:  ikhristi <ikhristi@student.42wolfsburg    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/06/17 15:47:28 by  ikhristi         #+#    #+#              #
-#    Updated: 2024/06/17 15:47:30 by  ikhristi        ###   ########.fr        #
+#    Updated: 2024/06/17 20:20:22 by  ikhristi        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS		=	main.cpp ClapTrap.cpp ScavTrap.cpp
+SRCS		=	main.cpp ClapTrap.cpp ScavTrap.cpp FragTrap.cpp
 
 CC_FLAGS		= -std=c++98 -Wall -Wextra -Werror -g
 CC				=	c++
